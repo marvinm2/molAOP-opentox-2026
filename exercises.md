@@ -7,8 +7,8 @@ already inside the tools.
 
 | | |
 |---|---|
-| Builder | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) — use the guest code from the chat |
-| Analyser | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) — no login needed |
+| Builder | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) (use the guest code from the chat) |
+| Analyser | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) (no login needed) |
 
 These are for practice. Nothing is handed in and nothing is marked, so go as far as you find
 interesting and skip what you don't. If a term is unfamiliar, the [glossary](glossary) has it.
@@ -140,7 +140,7 @@ whether you get the same Key Events.
 ## What we'll ask you afterwards
 
 The last half hour is a live poll and open discussion. We're not checking whether you got the
-right answer — we want to know what the experience was like and what you make of the approach.
+right answer. We want to know what the experience was like and what you make of the approach.
 Critical answers are more useful to us than kind ones, and the poll is anonymous.
 
 Worth noting anything that annoyed or confused you while it is fresh, because that is the part
@@ -159,7 +159,7 @@ people forget by the end.
 
 5. What single change would most improve the Builder?
 6. What single change would most improve the Analyser?
-7. Was anything actively misleading — a label, a number, or a screen that made you think the
+7. Was anything actively misleading: a label, a number, or a screen that made you think the
    wrong thing?
 8. Did the tool ever do something you did not expect? The confidence tier is a known one: it is
    recalculated from your four answers rather than taken as given. Were there others?
