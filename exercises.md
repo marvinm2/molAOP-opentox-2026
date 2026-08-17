@@ -38,7 +38,8 @@ justification is the only place your reasoning shows up. One sentence is plenty.
 
 ### Some Key Events worth a look
 
-Two flavours, depending on how much of a hunt you want.
+None of these has a WikiPathways mapping, so whatever you propose is new curation rather than a
+repeat of work already done. Two flavours, depending on how much of a hunt you want.
 
 #### There is a good pathway waiting to be found
 
