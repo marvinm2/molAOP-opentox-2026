@@ -1,0 +1,109 @@
+---
+# Empty front matter is required — it tells Jekyll to process this file as SCSS
+# instead of copying it verbatim. Do not remove.
+---
+
+// ---------------------------------------------------------------------------
+// Maastricht University house style, applied over the Cayman theme.
+//
+// Colours are the UM palette as published by the University Library
+// (https://library.maastrichtuniversity.nl/library-ux-elementen/). The Library
+// uses contrast-adjusted values of the corporate colours, because the
+// unmodified house-style colours fail the WCAG contrast guidelines. The
+// corporate dark blue is unchanged; the orange and light blue are the
+// contrast-safe versions.
+//
+// Type: the house typeface is Thesis Sans (Lucas de Groot), which is licensed
+// and cannot be served from a public site. UM's own web substitute is Open
+// Sans, which Cayman already loads from Google Fonts, so the body font needs
+// no change here.
+// ---------------------------------------------------------------------------
+
+$um-dark-blue:  #001c3d; // hoofdkleur      — banner, headings
+$um-orange:     #d2460f; // accentkleur     — buttons
+$um-light-blue: #007fad; // accentkleur 2   — links
+$um-grey:       #666666; // secondary text
+$um-body-text:  #333333; // body copy
+
+// Cayman declares all of its variables with !default, so assigning them before
+// the import below overrides the theme's greens and blues.
+$header-bg-color: $um-dark-blue;
+$header-bg-color-secondary: $um-dark-blue; // see .page-header — flat, no gradient
+$header-heading-color: #fff;
+$section-headings-color: $um-dark-blue;
+$body-text-color: $um-body-text;
+$body-link-color: $um-light-blue;
+$blockquote-text-color: $um-grey;
+$code-text-color: $um-body-text;
+
+@import "{{ site.theme }}";
+
+// ---------------------------------------------------------------------------
+// Everything below covers what the theme's variables do not reach.
+// ---------------------------------------------------------------------------
+
+// UM banners are a flat block of dark blue. Cayman paints a diagonal gradient
+// between its two header colours; setting both to the same value would already
+// flatten it, but clearing the image says so explicitly.
+.page-header {
+  background-image: none;
+}
+
+.project-tagline {
+  opacity: 0.85; // white at Cayman's 0.7 goes muddy on the darker UM blue
+}
+
+// Banner buttons in UM orange. White on #d2460f is 4.5:1, and the button
+// against the dark blue banner is 3.8:1, so both clear WCAG AA.
+.btn {
+  color: #fff;
+  background-color: $um-orange;
+  border-color: $um-orange;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: darken($um-orange, 8%);
+    border-color: darken($um-orange, 8%);
+  }
+}
+
+.main-content {
+  // Headings carry the house style more than anything else on a text-heavy
+  // page, so give the two top levels some weight and a rule under the h1.
+  h1 {
+    padding-bottom: 0.4rem;
+    font-weight: 700;
+    border-bottom: 2px solid $um-orange;
+  }
+
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+
+  // These pages are mostly tables of tools, links and timings — a tinted
+  // header row makes them scannable without adding a second accent colour.
+  table {
+    th {
+      color: $um-dark-blue;
+      background-color: rgba(0, 28, 61, 0.05);
+    }
+  }
+
+  blockquote {
+    border-left-color: $um-light-blue;
+  }
+
+  hr {
+    background-color: rgba(0, 28, 61, 0.12);
+  }
+}
+
+.site-footer {
+  border-top-color: rgba(0, 28, 61, 0.12);
+}
+
+.site-footer-owner {
+  color: $um-dark-blue;
+}
