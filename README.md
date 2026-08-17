@@ -36,6 +36,8 @@
 Facilitators: **Dr. Marvin Martens** and **Sidra Adil**, Department of Translational
 Genomics, Maastricht University.
 
+Session page: [opentox.net](https://www.opentox.net/events/opentox-summer-school-2026/MarvinMartens&SidraAdil)
+
 ---
 
 ## What this session is about
@@ -87,6 +89,35 @@ The Builder produces the mappings; the Analyser consumes them.
 The exercises are for practice and exploration — there is nothing to hand in and no
 assessment. Work at your own pace, do as much as interests you, and ask in the chat at any
 point.
+
+## About the facilitators
+
+Marvin Martens and Sidra Adil are researchers in the Department of Translational Genomics
+(TGX) at Maastricht University. Their work focuses on connecting Adverse Outcome Pathways
+(AOPs) with transcriptomics data and developing practical approaches for mechanistically
+informed, animal-free chemical safety assessment.
+
+**Marvin** is a postdoctoral researcher with a background in biomedical sciences and
+bioinformatics. His research focuses on making AOP knowledge FAIR, computable, and easier to
+integrate with molecular data. He develops knowledge resources and tools such as the AOP-Wiki
+RDF knowledge graph and the molAOP Builder and Analyser web applications. His work combines
+semantic web technologies, transcriptomics, and computational modelling to help researchers
+interpret molecular changes in the context of toxicity pathways. He contributes to initiatives
+including VHP4Safety and the ELIXIR Toxicology Community.
+[LinkedIn](https://www.linkedin.com/in/marvin-martens/)
+
+**Sidra** is a PhD candidate with a background in microarray and RNA-seq data analysis. As
+part of EFSA's TXG-MAP project, her research connects AOPs to transcriptomics data, allowing
+gene expression measurements to be interpreted as specific steps in a toxicity pathway rather
+than simply as lists of changed genes. A central challenge is that many Key Events in the
+AOP-Wiki lack the ontology annotations needed to establish these connections. Much of her work
+therefore involves systematically annotating Key Events across organ-specific AOP networks.
+[LinkedIn](https://www.linkedin.com/in/sidra-adil-a971221a0/)
+
+Together, Marvin and Sidra combine computational infrastructure, ontology annotation, and
+transcriptomics analysis to make AOP knowledge more accessible and applicable. Their work
+supports the interpretation of molecular data in a transparent biological context and advances
+the use of new approach methodologies (NAMs) in chemical risk assessment.
 
 ## Resources
 
