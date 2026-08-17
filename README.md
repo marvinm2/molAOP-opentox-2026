@@ -1,32 +1,3 @@
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LearningResource",
-  "name": "From Genes to Adverse Outcomes: Hands-on Molecular AOPs with Open Web Tools",
-  "description": "A two-hour online session introducing the molecular Adverse Outcome Pathway workflow through two free browser-based tools: the Molecular AOP Builder, which curates Key Event to pathway mappings, and the Molecular AOP Analyser, which uses those mappings to test gene-expression data for Key Event enrichment.",
-  "keywords": "Adverse Outcome Pathway, AOP, toxicology, transcriptomics, WikiPathways, Gene Ontology, enrichment analysis, NAMs",
-  "audience": {
-    "@type": "Audience",
-    "name": "Researchers and students in toxicology and risk assessment, all levels"
-  },
-  "author": [
-    { "@type": "Person", "name": "Marvin Martens" },
-    { "@type": "Person", "name": "Sidra Adil" }
-  ],
-  "http://purl.org/dc/terms/conformsTo": {
-    "@type": "CreativeWork",
-    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
-  },
-  "license": {
-    "@type": "CreativeWork",
-    "@id": "http://creativecommons.org/licenses/by/4.0/",
-    "name": "CC-BY 4.0",
-    "url": "https://creativecommons.org/licenses/by/4.0/"
-  },
-  "version": "1.0"
-}
-</script>
-
 # From Genes to Adverse Outcomes
 
 ### Hands-on Molecular AOPs with Open Web Tools
@@ -36,7 +7,10 @@
 Facilitators: **Dr. Marvin Martens** and **Sidra Adil**, Department of Translational
 Genomics, Maastricht University.
 
-Session page: [opentox.net](https://www.opentox.net/events/opentox-summer-school-2026/MarvinMartens&SidraAdil)
+| | |
+|---|---|
+| Workshop materials | <https://marvinm2.github.io/molAOP-opentox-2026/> |
+| OpenTox session page | <https://www.opentox.net/events/opentox-summer-school-2026/MarvinMartens&SidraAdil> |
 
 ---
 
