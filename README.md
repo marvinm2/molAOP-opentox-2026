@@ -79,16 +79,17 @@ data of your own.
 
 | Time (CEST) | Segment |
 |---|---|
-| 13:00 | Introduction to AOPs and molecular AOPs |
-| 13:15 | Builder: live demo |
+| 13:00 | Welcome, and an introduction to Adverse Outcome Pathways |
+| 13:20 | The two tools and how they fit together. Guest code goes out in the chat |
+| 13:30 | Builder: live demo |
 | 13:40 | Analyser: live demo |
-| 14:05 | Hands-on setup, guest code shared in the chat |
-| 14:10 | Exercise A: propose a mapping in the Builder |
-| 14:35 | Exercise B: run an enrichment in the Analyser |
-| 14:55 | Questions, discussion and a live poll |
+| 13:50 | Exercise A: propose a mapping in the Builder |
+| 14:10 | Exercise B: run an enrichment in the Analyser |
+| 14:30 | Live poll, discussion and questions |
 
 The Builder exercise runs first so that a mapping you propose can be approved and then show up
-in the Analyser while you are still in the room.
+in the Analyser while you are still in the room. You'll get the guest code at 13:20, so log in
+during the demos rather than waiting.
 
 ## Exercises
 

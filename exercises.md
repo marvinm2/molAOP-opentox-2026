@@ -110,7 +110,7 @@ frustrating first exercise.
 
 ---
 
-## Exercise B: run an enrichment in the Analyser (~25 min)
+## Exercise B: run an enrichment in the Analyser (~20 min)
 
 Now use mappings like the one you just proposed. No login needed for any of this.
 
