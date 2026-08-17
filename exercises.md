@@ -68,11 +68,40 @@ they diverge?
 
 ### Some Key Events worth a look
 
-Entirely optional — a starting point if you'd rather not go hunting. All of these are
-genuinely **unmapped to WikiPathways** in the live database, so whatever you propose is new
-curation rather than a repeat of work already done. Each already has a **GO Biological
-Process** mapping, so the biology is pinned down and you are choosing the pathway that best
-represents it.
+All optional — a starting point if you'd rather not go hunting. None of these currently has a
+WikiPathways mapping, so whatever you propose is new curation rather than a repeat of work
+already done. They come in two flavours.
+
+#### Start here — a well-matched pathway is there to be found
+
+For each of these there is a WikiPathways entry that fits the Key Event closely. The exercise
+is to find it, check that it really does represent the biology, and judge how confident you
+are. Good for a first pass.
+
+| Key Event | Title | Appears in |
+|---|---|---|
+| `KE 264` | Activation, SREBP-1c | AOP 34 |
+| `KE 715` | Activation, Constitutive androstane receptor | AOP 107 |
+| `KE 941` | Activation, EGFR | AOP 148 |
+| `KE 2221` | Altered Liver X receptor activity | AOP 525 |
+| `KE 1424` | Reduced, fatty acid beta oxidation | AOP 232 |
+| `KE 1792` | Toll-like receptor 4 activation | AOP 347 |
+| `KE 1994` | Increase, Ferroptosis | AOP 615 |
+| `KE 1512` | Unfolded Protein Response | AOP 260, AOP 285, AOP 464 |
+| `KE 1752` | Increased Angiotensin II | AOP 319, AOP 381, AOP 384 (+1) |
+| `KE 1276` | Lung fibrosis | AOP 206, AOP 319, AOP 382 (+2) |
+| `KE 179` | Decrease, Fatty acid beta-oxidation | AOP 36, AOP 497, AOP 529 (+4) |
+| `KE 1457` | Epithelial Mesenchymal Transition | AOP 206, AOP 241, AOP 280 (+7) |
+
+The Key Events lower down the table appear in many AOPs at once. That is worth noticing:
+because mappings are stored per Key Event, one mapping there is inherited by every AOP the
+event belongs to.
+
+#### Harder — genuinely uncharted
+
+These have no WikiPathways mapping and no obvious namesake either, so they need real
+biological judgement. Each already has a **GO Biological Process** mapping, so the biology is
+pinned down and you are choosing the pathway that best represents it.
 
 | Key Event | Title | Appears in |
 |---|---|---|
@@ -91,7 +120,7 @@ represents it.
 If several people land on the same Key Event, that's fine — you'll simply see how differently
 two people can read the same suggestion list, which is worth discussing in itself.
 
-### If you finish early — the gut–liver axis (AOP 642)
+### If you finish early — the gut–liver axis (AOP 642, harder still)
 
 These Key Events, from *Intestinal FXR inhibition → steatohepatitis*, have **no mapping in
 either WikiPathways or GO**, so they need the full biological judgement rather than a
