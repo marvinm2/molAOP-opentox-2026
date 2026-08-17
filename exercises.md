@@ -1,82 +1,49 @@
-# Exercise sheet — Molecular AOP tools
+# Exercise sheet
 
-[← back to the session overview](./)
+[← back to the session overview](./) · [glossary and further reading](glossary)
 
-Everything runs in your web browser. No installation, no coding. Datasets are already
-provided inside the tools, so you don't need to bring your own.
+Everything runs in your browser. Nothing to install, no code to write, and the datasets are
+already inside the tools.
 
 | | |
 |---|---|
-| **Analyser** | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) — no login needed |
-| **Builder** | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) — guest code shared in the chat |
+| Builder | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) — use the guest code from the chat |
+| Analyser | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) — no login needed |
 
-**These exercises are for practice.** Nothing is handed in and nothing is marked. Go as far
-as you find interesting, skip what you don't, and ask in the chat whenever something is
-unclear or doesn't behave as described.
+These are for practice. Nothing is handed in and nothing is marked, so go as far as you find
+interesting and skip what you don't. If a term is unfamiliar, the [glossary](glossary) has it.
+If something doesn't behave the way it's written here, say so in the chat, because that is
+usually us rather than you.
 
----
-
-## Exercise A — Enrich a dataset with the Analyser (~25 min)
-
-**Goal:** turn a gene-expression dataset into AOP Key Event enrichment results.
-
-No login is needed for any part of this exercise.
-
-1. Open the **Analyser**. On the landing page, choose one of the **provided demo datasets**
-   (for example a PXR agonist study).
-2. Check the **auto-detected columns** — gene identifier, log2 fold change, p-value. Adjust
-   them if the tool guessed wrong.
-3. Pick an **AOP** to analyse against. Use the recommended one, or search for another.
-4. Choose an enrichment method and run the analysis:
-   - **Fisher's exact test** — threshold-based over-representation, or
-   - **GSEA** — threshold-free and direction-aware.
-5. Read the **results table**. Which Key Events come out significantly enriched after
-   false-discovery-rate correction?
-6. Explore the **interactive network**. Which Key Events light up, and how do the genes
-   colour by expression? Open the **Pathway view** for one enriched Key Event.
-7. **Export** a PDF report, or the gene-by-Key-Event CSV.
-
-**Something to think about:** does the pattern of enriched Key Events tell a plausible
-mechanistic story, running from the molecular initiating event toward the adverse outcome?
-Or are the significant hits scattered across the network without an obvious thread?
-
-### If you finish early — batch comparison
-
-Use the **one-click batch demo** to compare the two PXR datasets, then open the
-**comparison heatmap**. Where do the two conditions agree across Key Events, and where do
-they diverge?
+Exercise A comes first because your mapping can then show up in Exercise B.
 
 ---
 
-## Exercise B — Propose a mapping with the Builder (~20 min)
+## Exercise A: curate a mapping in the Builder (~20 min)
 
-**Goal:** curate a Key Event → pathway mapping of the kind the Analyser depends on.
+A Key Event is a step in an AOP, described in words. To test it against gene expression data
+you need to know which genes represent it. That is what a mapping is, and that is what you are
+about to make.
 
-1. Open the **Builder** and click **Login**. In the login window, enter the **guest access
-   code** from the chat.
-2. Pick a Key Event that interests you — there are some suggestions below, but any Key Event
-   in the tool is fair game.
-3. Review the **suggested WikiPathways and GO terms**. They are ranked by similarity score
-   from a language model, and each carries a confidence tier.
-4. **Propose a mapping** for a suggestion you find biologically sensible, and add a short
-   justification for why.
-5. Marvin will **approve** a few proposals live so you can see them flow through to the
-   Analyser.
+1. Open the Builder, click Login, and enter the guest code from the chat.
+2. Pick a Key Event that interests you. There are suggestions below, but anything in the tool
+   is fair game.
+3. Look at the suggested WikiPathways and GO terms. A language model ranked them by how closely
+   their description matches the Key Event text. Ranking is not agreement, so read them.
+4. Choose one you find biologically sensible and propose it, with a sentence saying why.
+5. Marvin will approve some proposals live during the session.
 
-> Your proposals are submitted under a shared guest identity rather than your own name, so
-> the justification text is what makes your reasoning visible. A sentence is plenty.
+Your proposal is submitted under a shared guest identity rather than your own name, so the
+justification is the only place your reasoning shows up. One sentence is plenty.
 
 ### Some Key Events worth a look
 
-All optional — a starting point if you'd rather not go hunting. None of these currently has a
-WikiPathways mapping, so whatever you propose is new curation rather than a repeat of work
-already done. They come in two flavours.
+Two flavours, depending on how much of a hunt you want.
 
-#### Start here — a well-matched pathway is there to be found
+#### There is a good pathway waiting to be found
 
-For each of these there is a WikiPathways entry that fits the Key Event closely. The exercise
-is to find it, check that it really does represent the biology, and judge how confident you
-are. Good for a first pass.
+For each of these, WikiPathways contains an entry that fits the Key Event closely. The work is
+finding it, checking that it really represents the biology, and deciding how confident you are.
 
 | Key Event | Title | Appears in |
 |---|---|---|
@@ -93,15 +60,15 @@ are. Good for a first pass.
 | `KE 179` | Decrease, Fatty acid beta-oxidation | AOP 36, AOP 497, AOP 529 (+4) |
 | `KE 1457` | Epithelial Mesenchymal Transition | AOP 206, AOP 241, AOP 280 (+7) |
 
-The Key Events lower down the table appear in many AOPs at once. That is worth noticing:
-because mappings are stored per Key Event, one mapping there is inherited by every AOP the
-event belongs to.
+The ones near the bottom appear in a lot of AOPs at once. Mappings are stored per Key Event,
+not per AOP, so a single mapping there is inherited by every AOP the event belongs to. Curation
+effort compounds.
 
-#### Harder — genuinely uncharted
+#### Genuinely uncharted
 
-These have no WikiPathways mapping and no obvious namesake either, so they need real
-biological judgement. Each already has a **GO Biological Process** mapping, so the biology is
-pinned down and you are choosing the pathway that best represents it.
+No WikiPathways mapping and no obvious namesake either, so these need real biological
+judgement. Each already has a GO Biological Process term attached, which pins down the biology
+and leaves you choosing the pathway that best represents it.
 
 | Key Event | Title | Appears in |
 |---|---|---|
@@ -117,15 +84,14 @@ pinned down and you are choosing the pathway that best represents it.
 | `KE 1834` | Decrease, Acyl-CoA dehydrogenases | AOP 318 |
 | `KE 2199` | Increased, Expression of LXR activated genes | AOP 518 |
 
-If several people land on the same Key Event, that's fine — you'll simply see how differently
-two people can read the same suggestion list, which is worth discussing in itself.
+If several people land on the same Key Event, no harm done. You will see how differently two
+people read the same suggestion list, which is worth talking about on its own.
 
-### If you finish early — the gut–liver axis (AOP 642, harder still)
+### Harder still: the gut-liver axis (AOP 642)
 
-These Key Events, from *Intestinal FXR inhibition → steatohepatitis*, have **no mapping in
-either WikiPathways or GO**, so they need the full biological judgement rather than a
-confirmation. Bile-acid signalling is well represented upstream, so there is good material
-to find.
+These come from *Intestinal FXR inhibition leading to steatohepatitis* and have no mapping in
+WikiPathways or GO. Bile acid signalling is well covered upstream, so there is material to
+find.
 
 | Key Event | Title |
 |---|---|
@@ -137,33 +103,75 @@ to find.
 | `KE 2427` | Bile acid composition in bile and intestine, altered |
 | `KE 2428` | Gut derived PAMPs, increased |
 
-> A few Key Events in these AOPs are deliberately left off both lists — disease endpoints
-> like *Increase, Liver steatosis*, and very general events like *Activation, MAPK*. They
-> are hard to map well and tend to produce low-confidence mappings. That is a real lesson
-> about the method, but a frustrating first exercise.
-
-**Seeing it connect:** once a mapping is approved it becomes available to the Analyser, so an
-enrichment re-run can pick up the new Key Event → pathway link. Mappings are cached for about
-an hour, so the facilitators will demonstrate this rather than have everyone wait.
-
-**Something to think about:** what makes a mapping trustworthy? How would you weigh a
-high-scoring suggestion from the model against your own reading of the biology?
+Some Key Events in these AOPs are deliberately missing from both lists. Disease endpoints like
+*Increase, Liver steatosis* and very general events like *Activation, MAPK* are hard to map
+well and tend to produce weak mappings. That is a real lesson about the method, but a
+frustrating first exercise.
 
 ---
 
-## Two things that surprise people
+## Exercise B: run an enrichment in the Analyser (~25 min)
 
-- **Your confidence choice may change.** The Builder derives the confidence tier from your
-  four assessment answers rather than taking the tier you picked at face value, so a
-  submission asking for "low" can be stored as "medium". That is the scoring working as
-  intended, not a bug.
-- **Mappings are stored per Key Event, not per AOP.** A Key Event that appears in five AOPs
-  is mapped once, and that mapping is inherited everywhere it appears. It is why curation
-  effort compounds across the AOP network.
+Now use mappings like the one you just proposed. No login needed for any of this.
 
-## Wrap-up resources
+1. Open the Analyser and choose one of the provided demo datasets, for example a PXR agonist
+   study.
+2. Check the auto-detected columns: gene identifier, log2 fold change, p-value. Fix them if the
+   tool guessed wrong.
+3. Pick an AOP to analyse against. Use the recommended one or search for another.
+4. Choose a method and run it. Fisher's exact test needs a significance cutoff and asks whether
+   a pathway's genes are over-represented among your changed genes. GSEA uses your whole ranked
+   list, no cutoff, and knows up from down.
+5. Read the results table. Which Key Events are significant after FDR correction?
+6. Open the network. Which Key Events light up, and how do genes colour by expression? Try the
+   Pathway view on one enriched Key Event.
+7. Export a PDF report, or the gene-by-Key-Event CSV.
 
-- Source code: [`marvinm2/molAOP-builder`](https://github.com/marvinm2/molAOP-builder) ·
+### If you finish early
+
+Run the one-click batch demo comparing the two PXR datasets and open the comparison heatmap.
+Where do the two conditions agree across Key Events, and where do they part ways?
+
+Also worth trying: run the same dataset and AOP with Fisher's and then with GSEA, and see
+whether you get the same Key Events.
+
+---
+
+## Questions to bring back
+
+We'll go through these together after the hands-on part, so jot down your answers as you go.
+No wrong answers, and disagreement is the interesting outcome.
+
+### About the mapping you made
+
+1. Which Key Event did you pick, and which pathway did you map it to?
+2. Was your pathway in the top three suggestions, or did you have to go looking?
+3. Did you agree with the model's top-ranked suggestion? Fully, partly, or not at all?
+4. What confidence tier did you end up with, and did the tool give you the tier you expected?
+5. Was there a suggestion that scored well but was biologically wrong? What gave it away?
+
+### About the enrichment
+
+6. Which method gave you more significant Key Events, Fisher's or GSEA?
+7. Did the significant Key Events form a believable chain from the molecular initiating event
+   towards the adverse outcome, or were they scattered?
+8. Did any Key Event come out significant that you think is a false positive? Why?
+9. Were there Key Events with no result at all? What would that tell you?
+
+### The judgement calls
+
+10. What would you need to know about a mapping before trusting it in a regulatory assessment?
+11. A model ranked a pathway first and your reading of the biology says otherwise. Who wins,
+    and how should the tool record that disagreement?
+12. Is a Key Event that appears in twelve AOPs more valuable to map than one appearing in one?
+    Argue either way.
+
+---
+
+## Afterwards
+
+- Source code: [`marvinm2/molAOP-builder`](https://github.com/marvinm2/molAOP-builder) and
   [`marvinm2/molAOP-analyser`](https://github.com/marvinm2/molAOP-analyser)
-- Curated mapping dataset on Zenodo: [`10.5281/zenodo.20184643`](https://doi.org/10.5281/zenodo.20184643)
-- Public REST API: `https://molaop-builder.vhp4safety.nl/api/v1/mappings`
+- [Glossary and documentation links](glossary)
+- The curated mapping dataset on Zenodo: [`10.5281/zenodo.20184643`](https://doi.org/10.5281/zenodo.20184643)
+- Public API, open to anyone: `https://molaop-builder.vhp4safety.nl/api/v1/mappings`

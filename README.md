@@ -42,53 +42,61 @@ Session page: [opentox.net](https://www.opentox.net/events/opentox-summer-school
 
 ## What this session is about
 
-Adverse Outcome Pathways (AOPs) organise mechanistic knowledge from a molecular initiating
-event, through a series of key events, to an adverse outcome. Connecting them to real
-molecular measurements is still a practical bottleneck. This session walks through the
-molecular AOP (mol-AOP) workflow using two free tools developed within VHP4Safety.
+An Adverse Outcome Pathway describes how harm unfolds: a chemical touches a molecule, that
+changes a cell, and eventually something goes wrong at the level of the whole organism. Each
+step is a Key Event, written down in words.
+
+Gene expression data, meanwhile, arrives as a list of genes that went up or down. Getting from
+one to the other is still awkward in practice, and that gap is what this session is about. We
+use two free tools built in VHP4Safety.
 
 | Tool | What it does | Link |
 |---|---|---|
-| **Molecular AOP Builder** | Curates mappings between AOP Key Events and biological pathways (WikiPathways) and Gene Ontology terms, using language-model similarity scoring to suggest candidates for expert review. | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) |
-| **Molecular AOP Analyser** | Uses those curated mappings to test gene-expression datasets for Key Event enrichment, visualises the results as interactive AOP networks, and generates reports. | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) |
+| Molecular AOP Builder | Records which pathways and Gene Ontology terms represent a Key Event. A language model proposes candidates; a curator decides. | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) |
+| Molecular AOP Analyser | Takes those mappings and tests your gene expression data for Key Events that have changed, then draws the result on the AOP network. | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) |
 
-The Builder produces the mappings; the Analyser consumes them.
+The Builder makes the mappings and the Analyser uses them. That is the whole architecture.
+
+Not familiar with the acronyms? The [glossary](glossary) covers them, along with links to the
+documentation for both tools.
 
 ## What you need
 
-**Just a laptop and a web browser.** There is nothing to install and no code to write.
+A laptop and a browser. Nothing to install, no code to write.
 
-- The **Analyser needs no login at all.**
-- The **Builder needs a guest access code**, which the facilitators will paste into the
-  chat at the start of the hands-on part.
-- **Datasets are provided inside the tools** — you do not need to bring your own data.
+The Analyser needs no login. The Builder needs a guest code, which we'll paste into the chat
+when the hands-on part starts. Datasets are already in the tools, so you don't need to bring
+data of your own.
 
 ## By the end you will be able to
 
-1. Explain how molecular AOPs link gene-expression data to AOP Key Events.
-2. Run a Key Event enrichment analysis and interpret the resulting AOP network.
-3. Curate and propose a Key Event–pathway mapping for expert review.
-4. Judge the confidence and weight of evidence behind a molecular AOP result.
+1. Explain how molecular AOPs link gene expression data to AOP Key Events.
+2. Run a Key Event enrichment analysis and read the resulting network.
+3. Propose a Key Event to pathway mapping for expert review.
+4. Judge how much confidence a molecular AOP result deserves.
 
 ## Programme
 
 | Time (CEST) | Segment |
 |---|---|
 | 13:00 | Introduction to AOPs and molecular AOPs |
-| 13:15 | Molecular AOP Builder — live demo |
-| 13:40 | Molecular AOP Analyser — live demo |
+| 13:15 | Builder: live demo |
+| 13:40 | Analyser: live demo |
 | 14:05 | Hands-on setup, guest code shared in the chat |
-| 14:10 | **Exercise A** — run an enrichment in the Analyser |
-| 14:35 | **Exercise B** — propose a mapping in the Builder |
-| 14:55 | Wrap-up and Q&A |
+| 14:10 | Exercise A: propose a mapping in the Builder |
+| 14:35 | Exercise B: run an enrichment in the Analyser |
+| 14:55 | Questions, discussion and a live poll |
+
+The Builder exercise runs first so that a mapping you propose can be approved and then show up
+in the Analyser while you are still in the room.
 
 ## Exercises
 
 **→ [Open the exercise sheet](exercises)**
 
-The exercises are for practice and exploration — there is nothing to hand in and no
-assessment. Work at your own pace, do as much as interests you, and ask in the chat at any
-point.
+Practice only. Nothing is handed in and nothing is marked. Work at your own pace, do as much as
+interests you, and ask in the chat whenever. The sheet ends with a set of questions we'll go
+through together in a live poll.
 
 ## About the facilitators
 
@@ -121,6 +129,7 @@ the use of new approach methodologies (NAMs) in chemical risk assessment.
 
 ## Resources
 
+- [Glossary, acronyms and tool documentation](glossary)
 - Source code: [`marvinm2/molAOP-builder`](https://github.com/marvinm2/molAOP-builder) ·
   [`marvinm2/molAOP-analyser`](https://github.com/marvinm2/molAOP-analyser)
 - Curated mapping dataset on Zenodo: [`10.5281/zenodo.20184643`](https://doi.org/10.5281/zenodo.20184643) (CC0)
