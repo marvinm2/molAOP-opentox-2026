@@ -137,34 +137,51 @@ whether you get the same Key Events.
 
 ---
 
-## Questions to bring back
+## What we'll ask you afterwards
 
-We'll go through these together after the hands-on part, so jot down your answers as you go.
-No wrong answers, and disagreement is the interesting outcome.
+The last half hour is a live poll and open discussion. We're not checking whether you got the
+right answer — we want to know what the experience was like and what you make of the approach.
+Critical answers are more useful to us than kind ones, and the poll is anonymous.
 
-### About the mapping you made
+Worth noting anything that annoyed or confused you while it is fresh, because that is the part
+people forget by the end.
 
-1. Which Key Event did you pick, and which pathway did you map it to?
-2. Was your pathway in the top three suggestions, or did you have to go looking?
-3. Did you agree with the model's top-ranked suggestion? Fully, partly, or not at all?
-4. What confidence tier did you end up with, and did the tool give you the tier you expected?
-5. Was there a suggestion that scored well but was biologically wrong? What gave it away?
+### How it went
 
-### About the enrichment
+1. How easy were the tools to use, on a scale of one to five?
+2. Where did you get stuck? Pick the worst moment: choosing a Key Event, reading the
+   suggestions, filling in the assessment, submitting, picking an AOP, running the analysis, or
+   reading the network.
+3. Did you finish what you set out to do, or run out of time?
+4. In one word, how did the Builder feel to use? And the Analyser?
 
-6. Which method gave you more significant Key Events, Fisher's or GSEA?
-7. Did the significant Key Events form a believable chain from the molecular initiating event
-   towards the adverse outcome, or were they scattered?
-8. Did any Key Event come out significant that you think is a false positive? Why?
-9. Were there Key Events with no result at all? What would that tell you?
+### Feedback on the tools
 
-### The judgement calls
+5. What single change would most improve the Builder?
+6. What single change would most improve the Analyser?
+7. Was anything actively misleading — a label, a number, or a screen that made you think the
+   wrong thing?
+8. Did the tool ever do something you did not expect? The confidence tier is a known one: it is
+   recalculated from your four answers rather than taken as given. Were there others?
 
-10. What would you need to know about a mapping before trusting it in a regulatory assessment?
-11. A model ranked a pathway first and your reading of the biology says otherwise. Who wins,
-    and how should the tool record that disagreement?
-12. Is a Key Event that appears in twelve AOPs more valuable to map than one appearing in one?
-    Argue either way.
+### What you make of the method
+
+9. Does mapping a Key Event to a pathway strike you as a sound way to connect gene expression to
+   an AOP? Convinced, partly convinced, or sceptical?
+10. Where would you not trust this approach? Name the situation.
+11. A language model ranks a pathway first and your reading of the biology disagrees. Who should
+    win, and how should the tool record that disagreement?
+12. Would you use either tool in your own work? If not, what is missing?
+
+### The materials
+
+13. Was the exercise sheet clear enough to work from without us explaining it?
+14. Did you use the glossary? Was anything missing from it?
+15. What would you have wanted to know before starting that we did not tell you?
+
+### Anything else
+
+16. One thing you would keep about this session, and one thing you would change.
 
 ---
 
