@@ -1,6 +1,6 @@
 # Exercise sheet — Molecular AOP tools
 
-[← back to the session overview](README.md)
+[← back to the session overview](./)
 
 Everything runs in your web browser. No installation, no coding. Datasets are already
 provided inside the tools, so you don't need to bring your own.

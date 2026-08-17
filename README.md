@@ -82,7 +82,7 @@ The Builder produces the mappings; the Analyser consumes them.
 
 ## Exercises
 
-**→ [Open the exercise sheet](exercises.md)**
+**→ [Open the exercise sheet](exercises)**
 
 The exercises are for practice and exploration — there is nothing to hand in and no
 assessment. Work at your own pace, do as much as interests you, and ask in the chat at any
