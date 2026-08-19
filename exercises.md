@@ -140,9 +140,9 @@ whether you get the same Key Events.
 
 ## What we'll ask you afterwards
 
-The last half hour is a live poll and open discussion. We're not checking whether you got the
-right answer. We want to know what the experience was like and what you make of the approach.
-Critical answers are more useful to us than kind ones, and the poll is anonymous.
+The last twenty minutes are a live poll and open discussion. We're not checking whether you
+got the right answer. We want to know what the experience was like and what you make of the
+approach. Critical answers are more useful to us than kind ones, and the poll is anonymous.
 
 Worth noting anything that annoyed or confused you while it is fresh, because that is the part
 people forget by the end.
