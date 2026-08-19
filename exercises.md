@@ -5,10 +5,13 @@
 Everything runs in your browser. Nothing to install, no code to write, and the datasets are
 already inside the tools.
 
-| | |
-|---|---|
-| Builder | [molaop-builder.vhp4safety.nl](https://molaop-builder.vhp4safety.nl) (use the guest code from the chat) |
-| Analyser | [molaop-analyser.vhp4safety.nl](https://molaop-analyser.vhp4safety.nl) (no login needed) |
+<div class="cta-row">
+<a class="cta" href="https://molaop-builder.vhp4safety.nl" target="_blank" rel="noopener">Open the Builder &rarr;</a>
+<a class="cta" href="https://molaop-analyser.vhp4safety.nl" target="_blank" rel="noopener">Open the Analyser &rarr;</a>
+</div>
+
+Both open in a new tab so this sheet stays where it is. The Builder asks for the guest code
+from the chat; the Analyser needs no login at all.
 
 These are for practice. Nothing is handed in and nothing is marked, so go as far as you find
 interesting and skip what you don't. If a term is unfamiliar, the [glossary](glossary) has it.

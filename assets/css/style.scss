@@ -107,3 +107,60 @@ $code-text-color: $um-body-text;
 .site-footer-owner {
   color: $um-dark-blue;
 }
+
+// ---------------------------------------------------------------------------
+// Call-to-action buttons.
+//
+// The links people actually need mid-session — the exercise sheet, the two
+// tools — were plain inline links lost in the prose. These give them a target
+// worth aiming at on a laptop screen. Orange is the UM accent for buttons;
+// white on it is 4.5:1, so it clears AA.
+// ---------------------------------------------------------------------------
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.4rem 0 1.8rem;
+}
+
+.main-content a.cta,
+.main-content a.cta-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.main-content a.cta {
+  color: #fff;
+  background-color: $um-orange;
+  border-color: $um-orange;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: darken($um-orange, 8%);
+    border-color: darken($um-orange, 8%);
+  }
+}
+
+.main-content a.cta-secondary {
+  color: $um-dark-blue;
+  background-color: transparent;
+  border-color: $um-dark-blue;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: $um-dark-blue;
+    border-color: $um-dark-blue;
+  }
+}

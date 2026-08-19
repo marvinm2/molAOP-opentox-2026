@@ -51,23 +51,26 @@ data of your own.
 
 ## Programme
 
-| Time (CEST) | Segment |
-|---|---|
-| 13:00 | Welcome, and an introduction to Adverse Outcome Pathways |
-| 13:20 | The two tools and how they fit together. Guest code goes out in the chat |
-| 13:30 | Builder: live demo |
-| 13:40 | Analyser: live demo |
-| 13:50 | Exercise A: propose a mapping in the Builder |
-| 14:10 | Exercise B: run an enrichment in the Analyser |
-| 14:30 | Live poll, discussion and questions |
+| Time (CEST) | Segment | Duration |
+|---|---|---|
+| 13:00 | Session introduction | 5 min |
+| 13:05 | What an AOP is, and why gene expression is hard to attach to one | 15 min |
+| 13:20 | VHP4Safety, the two tools, and how they connect | 20 min |
+| 13:40 | Live demo: Molecular AOP Builder and Molecular AOP Analyser | 20 min |
+| 14:00 | Exercise A: propose a mapping in the Builder. Guest code goes out in the chat | 20 min |
+| 14:20 | Exercise B: run an enrichment in the Analyser | 20 min |
+| 14:40 | Live poll, discussion and questions | 20 min |
 
 The Builder exercise runs first so that a mapping you propose can be approved and then show up
-in the Analyser while you are still in the room. You'll get the guest code at 13:20, so log in
-during the demos rather than waiting.
+in the Analyser while you are still in the room. The guest code goes into the chat at 14:00,
+when Exercise A starts.
 
 ## Exercises
 
-**→ [Open the exercise sheet](exercises)**
+<div class="cta-row">
+<a class="cta" href="exercises">Open the exercise sheet &rarr;</a>
+<a class="cta-secondary" href="glossary">Glossary and further reading</a>
+</div>
 
 Practice only. Nothing is handed in and nothing is marked. Work at your own pace, do as much as
 interests you, and ask in the chat whenever. The sheet ends with a set of questions we'll go
